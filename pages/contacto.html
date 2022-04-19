@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <header>
+        <nav class="NavBarIndex">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="./contacto.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Pantalla Main Formulario -->
+
+    <main>
+        <fieldset class="Contacto">
+            <leyend class="leyend">Complete todos los campos y realice su consulta</leyend>
+            <form class="Formulario" action="">
+                <div class="Name">
+                    <label for="">Nombre y apellido</label><br>
+                    <input type="text" placeholder="Escribe tu nombre" required class="input1"><br><br>
+                </div>
+
+                <div class="Phone">  
+                <label for="">Telefono de contacto</label><br>
+                <input type="number" placeholder="Numero de telefono" required class="input1"><br><br>
+                </div>
+
+                <div class="Email"> 
+                <label for="">Correo electronico</label><br>
+                <input type="email" placeholder="Escribe tu correo electronico" required class="input1"><br><br>
+                </div>
+
+                <div class="Consulta"> 
+                <label for="">Consulta</label><br>
+                <textarea name="Consulta" id="" cols="100" rows="10" placeholder="Escribe tu consulta aqui" required class="input2"></textarea><br><br>
+                </div>
+                <!-- Botones -->
+                <section class="BotForm">
+                    <input type="submit" value="Enviar Consulta" class="boton">
+                    <input type="reset" value="Borrar Formulario" class="boton">
+                </section>
+            </form>
+        </fieldset>
+    </main>
+    
+    <footer class="IndexFooter">
+        <div>
+            <a href="#" class="Logo"><img src="../img/locochico.png" alt=""></a>
+            <p>&#169 Todos los derechos reservados</p>
+        </div>
+        <ul>
+            <li><img src="../img/insta.svg" alt=""><a href="">instagram</a></li>
+            <li><img src="../img/face.svg" alt=""><a href="">facebook</a></li>
+            <li><img src="../img/whats.svg" alt=""><a href="">whatassap</a></li>
+            <li><img src="../img/mail.svg" alt=""><a href="">e-mail</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

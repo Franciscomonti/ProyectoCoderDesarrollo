@@ -1,0 +1,781 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+.gridindex{
+    display: grid;
+    grid-template-areas:'header'
+                        'frase'
+                        'main'
+                        'frase2'
+                        'Videosection'
+                        'footer';
+    width: 100%;
+}
+
+
+/* ---Header--Index--- */
+.IndexHeader{
+    grid-area: 'header';
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.video{
+    grid-row: 1/4;
+    grid-column: 1/4;
+}
+.video video{
+    height: 80vh;
+    width: 100%;
+    object-fit: cover;
+    filter: grayscale(1);
+}
+
+.LogoIndex{
+    display: flex;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    align-items: center;
+    z-index: 100;
+    margin: 20px 40px;
+    align-self: flex-start;
+}
+.LogoIndex img{
+    width: 90px;
+    animation: rotationy 7s infinite linear;
+}
+
+@keyframes rotationy {
+    from {
+    transform: rotatey(0deg);
+    }
+    50% {
+    transform: rotatey(0deg);    
+    }
+    to {
+    transform: rotatey(359deg);
+    }
+}
+
+.LogoIndex p{
+    font-size: 40px;
+    color: white;
+    white-space: nowrap;
+}
+
+/* --NavBar---Index--- */
+
+.NavBarIndex{
+    grid-column: 1/4;
+    grid-row: 3/4;
+    z-index: 100;
+    opacity: 75%;
+    align-self: flex-end;
+}
+
+.NavBarIndex ul{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 30%;
+    background-color: black;
+    list-style: none;
+}
+
+.NavBarIndex ul a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    opacity: 50%;
+}
+
+.NavBarIndex ul a:hover{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    opacity: 100%;
+}
+
+/* Index Frase */
+
+.IndexFrase{
+    grid-area: 'frase';
+    color: white;
+    width: 60%;
+    margin:100px auto 100px;
+    text-align: center;
+    border-top: 1px white solid;
+    border-bottom: 1px white solid;
+    padding: 20px 100px;
+}
+
+.IndexFrase p{
+    font-size: 30px;
+}
+
+.IndexFrase h2{
+    font-size: 50px;
+}
+
+/* Index Main--Galleria de fotos con links */
+.IndexMain{
+    grid-area: 'main';
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 80vh; 
+    width: 70%;
+    grid-gap: 30px 20px;
+    margin: 50px auto;
+    
+}
+
+.LinkGallery{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-image: url(../img/2.jpg);
+}
+
+.LinkCasamiento{
+    grid-column: 1/3;
+    grid-row: 2/4;
+    background-image: url(../img/10.jpg);
+}
+
+.LinkBooks{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-image: url(../img/4.jpg);
+}
+
+.LinkSweet{
+    grid-column: 3/4;
+    grid-row: 3/4;
+    background-image: url(../img/7.jpg);
+}
+
+
+.LinkAbout{
+    grid-column: 4/5;
+    grid-row: 3/4;
+    background-image: url(../img/6.jpg);
+}
+
+.LinkContacto{
+    grid-column: 3/5;
+    grid-row: 1/3;
+    background-image: url(../img/5.jpg);
+    
+}
+
+.IndexMain a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 30px;
+    box-shadow: black 0 0 10px;
+    filter: grayscale(1);
+    transition: 0.8s;
+}
+
+.IndexMain a:hover{
+    font-size: 50px;
+    filter: none;
+    transform: scale(1.1);
+    z-index: 1000;
+}
+
+/* Frase debajo del main */
+
+.IndexFrase{
+    grid-area: 'frase2';
+}
+
+
+
+.VideoSection{
+    grid-area: 'Videosection';
+    display: flex;
+    width: 70%;
+    margin: 50px auto 150px;
+    height: auto;
+    filter: grayscale(1);
+    transition: 0.8s;
+}
+
+.vid{
+    width: 50%;
+}
+
+.VideoSection:hover{
+    filter: none;
+}
+.VideoSection .VideoParrafo{
+    color: white;
+    margin: auto 20px;
+}
+
+
+/* Footer */
+
+.IndexFooter{
+    grid-area: 'footer';
+    display: flex;
+    width: 100%;
+    padding: 10px 80px;
+    height: auto;
+    border-top: 1px white solid;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.IndexFooter ul{
+    display: flex;
+    justify-content: start;
+    margin: 30px 0px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.IndexFooter ul li{
+    display: flex;
+    padding: 20px;
+    opacity: 50%;
+    align-items: center;
+}
+
+.IndexFooter ul li:hover{
+    opacity: 100%;
+}
+
+.IndexFooter ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.IndexFooter ul li img{
+    width: 40px;
+    margin-right: 10px;
+}
+
+.IndexFooter ul li:hover img{
+animation: vibracion 0.5s linear infinite;
+}
+
+@keyframes vibracion {
+    from {
+    transform: rotate(-10deg);
+    }
+    50% {
+    transform: rotate(10deg);    
+    }
+    to {
+    transform: rotate(-10deg);
+    }
+}
+
+.IndexFooter div{
+    color: white;
+    padding: 0px 20px;
+    margin: 40px 0px;
+    font-size: 25px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.IndexFooter .Logo img{
+    width: 100px;
+}
+
+/* ---Gallery---Galleria de Imagenes--- */
+
+.GalleryImgPage{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr ;
+    width: 70%;
+    height: 1000px;
+    margin: 50px auto ;
+    grid-gap: 10px 20px;
+}
+
+.GalleryImgPage span{
+    background-position: center;
+    background-size:cover ;
+    transition: 0.8s;
+}
+
+
+.GalleryImgPage span:hover{
+    font-size: 50px;
+    filter: none;
+    transform: scale(1.2);
+    z-index: 1000;
+}
+
+
+
+.GalleryImgPage .img1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-image: url(../img/img10.jpg);  
+}
+
+.GalleryImgPage .img2{
+    grid-column: 2/3;
+    grid-row: 1/3;
+    background-image: url(../img/img5.jpg);   
+}
+
+.GalleryImgPage .img3{
+    grid-column: 1/2;
+    grid-row: 2/4;
+    background-image: url(../img/img6.jpg);   
+}
+
+.GalleryImgPage .img4{
+    grid-column: 2/4;
+    grid-row: 3/4;
+    background-image: url(../img/img8.jpg);
+}
+
+.GalleryImgPage .img5{
+    grid-column: 3/5;
+    grid-row: 1/2;
+    background-image: url(../img/img9.jpg);
+}
+
+.GalleryImgPage .img6{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    background-image: url(../img/img10.jpg);
+}
+
+.GalleryImgPage .img7{
+    grid-column: 4/5;
+    grid-row: 2/3;
+    background-image: url(../img/img3.jpg);
+}
+
+.GalleryImgPage .img8{
+    grid-column: 4/5;
+    grid-row: 3/5;
+    background-image: url(../img/img4.jpg);
+}
+
+.GalleryImgPage .img9{
+    grid-column: 1/3;
+    grid-row: 4/5;
+    background-image: url(../img/7.jpg);
+}
+
+.GalleryImgPage .img10{
+    grid-column: 3/4;
+    grid-row: 4/5;
+    background-image: url(../img/4.jpg);
+}
+
+/* pagina contacto */
+
+
+/* main contacto formularios */
+
+.Contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    background-color: black;
+    width: 80%;
+    margin: 40px auto;
+    border: none;
+}
+
+.Contacto .leyend{
+    font-family: 'lato', 'sans-serif';
+    font-size: 40px ;
+    padding: 40px;
+}
+
+/* Form contactos */
+.Formulario{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5,1fr);
+    width: 50%;
+    margin: 0px auto 80px;
+    height: 700px;
+}
+
+.Name{
+    grid-row: 1/2;
+}
+
+.Phone{
+    grid-row: 2/3;
+}
+
+.Email{
+    grid-row: 3/4;
+}
+
+.Consulta{
+    grid-row: 4/5;
+}
+
+.BotForm{
+    grid-row: 5/6;
+}
+
+.Formulario div{
+    display: flex;
+    flex-direction: column;
+}
+
+.Contacto form label{
+    font-family: 'lato', 'sans-serif';
+    font-size: 24px;
+}
+
+.Contacto .Formulario .input1{
+    padding: 5px 10px;
+    width: 70%;
+    font-family: 'lato', 'sans-serif';
+    font-size: 18px;
+}
+
+.Contacto .Formulario .input2{
+    padding: 5px 10px;
+    width: 100%;
+    font-family: 'lato', 'sans-serif';
+    font-size: 18px;
+}
+
+/* Botones Contacto */
+.Contacto .Formulario section{
+    display: flex;
+    justify-content: end;
+}
+
+.Contacto .Formulario .boton{
+    padding: 10px;
+    margin: 0px 0px 40px 20px;
+    font-family: 'lato', 'sans-serif';
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.Contacto form .boton:hover{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+
+/* ---Media Query MaxWidth 600px Movil */
+
+
+@media only screen and (max-width:600px){
+
+    
+    /* ---Header--Index--- */
+
+.video video{
+    height: 40vh;
+}
+
+.LogoIndex{
+    grid-column: 1/3;
+    margin: 10px 20px;
+}
+.LogoIndex img{
+    width: 60px;
+}
+.LogoIndex p{
+    font-size: 24px;
+    color: white;
+}
+
+/* --NavBar---Index--- */
+
+.NavBarIndex{
+    grid-column: 1/4;
+    grid-row: 3/4;
+    z-index: 100;
+    opacity: 75%;
+    align-self: flex-end;
+}
+
+.NavBarIndex ul{
+    padding: 20px 10%;
+}
+
+.NavBarIndex ul a{
+    font-size: 18px;
+}
+
+.NavBarIndex ul a:hover{
+    font-size: 18px;
+}
+
+/* Index Frase */
+
+.IndexFrase{
+    width: 90%;
+    margin:20px auto 20px;
+    border-top: none;
+    border-bottom: none;
+    padding: 20px 10px;
+}
+
+.IndexFrase p{
+    font-size: 18px;
+}
+
+.IndexFrase h2{
+    font-size: 24px;
+}
+
+/* Index Main--Galleria de fotos con links */
+
+.IndexMain{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    height: 90vh; 
+    width: 80%;
+    grid-gap: 15px 10px;
+    margin: 25px auto;
+    
+}
+
+.LinkGallery{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.LinkCasamiento{
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+
+.LinkBooks{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.LinkSweet{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+
+.LinkAbout{
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.LinkContacto{
+    grid-column: 1/3;
+    grid-row: 4/5;
+}
+
+.IndexMain a{
+    filter: none;
+}
+
+
+/* Video del Index */
+
+.VideoSection{
+    grid-area: 'Videosection';
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 50px auto 20px;
+    height: auto;
+    filter: none;
+}
+
+.vid{
+    width: 100%;
+}
+
+.VideoSection .VideoParrafo{
+    margin: 20px auto;
+}
+
+.VideoParrafo h2{
+    font-size: 24px;
+    text-align: center;
+
+}
+
+.VideoParrafo p{
+    font-size: 14px;
+    text-align: center;
+
+}
+
+
+/* Footer */
+
+.IndexFooter{
+    flex-direction: column;
+    padding: 10px 10px;
+}
+
+
+.IndexFooter ul{
+    justify-content: space-between;
+    padding: 0px;
+    margin: 0px 0px;
+    flex-wrap: wrap;
+}
+
+.IndexFooter ul li{
+    display: flex;
+    padding: 7px;
+}
+
+.IndexFooter ul li a{
+    font-size: 16px;
+}
+
+.IndexFooter ul li img{
+    width: 18px;
+    margin-right: 5px;
+}
+
+.IndexFooter div{
+    padding: 0px 0px;
+    margin:  0px;
+    font-size: 14px;
+}
+
+.IndexFooter .Logo img{
+    width: 50px;
+}
+
+/* ---Gallery---Galleria de Imagenes--- */
+
+.GalleryImgPage{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    width: 90%;
+    height: 800px;
+    margin: 40px auto ;
+    grid-gap: 5px 10px;
+}
+
+.GalleryImgPage .img1{
+    grid-column: 1/3;
+    grid-row: 1/2;  
+}
+
+.GalleryImgPage .img2{
+    grid-column: 2/3;
+    grid-row: 2/3;  
+}
+
+.GalleryImgPage .img3{
+    grid-column: 1/2;
+    grid-row: 2/3;   
+}
+
+.GalleryImgPage .img4{
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+
+.GalleryImgPage .img5{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+.GalleryImgPage .img6{
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+
+.GalleryImgPage .img7{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.GalleryImgPage .img8{
+    grid-column: 3/4;
+    grid-row: 4/5;
+}
+
+.GalleryImgPage .img9{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.GalleryImgPage .img10{
+    grid-column: 2/4;
+    grid-row: 3/4;
+}
+
+
+/* Form contactos */
+.Contacto .leyend{
+    font-size: 18px ;
+    padding:40px 0px;
+}
+
+.Formulario{
+    width: 100%;
+    margin: 10px auto 0px ;
+    grid-template-rows: 80px 80px 80px 200px 20px;
+    height: auto ;
+    margin: 0px auto 40px;
+}
+
+.Contacto form label{
+    font-family: 'lato', 'sans-serif';
+    font-size: 18px;
+}
+
+.Contacto .Formulario .input1{
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+.Contacto .Formulario .input2{
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+/* Botones Contacto */
+.Contacto .Formulario section{
+    display: flex;
+    justify-content: end;
+}
+
+.Contacto .Formulario .boton{
+    padding: 2px 5px;
+    height: 30px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+}
+
