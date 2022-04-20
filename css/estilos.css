@@ -251,14 +251,14 @@ body{
     justify-content: space-between;
 }
 
-.IndexFooter ul li{
+.IndexFooter ul li a{
     display: flex;
     padding: 20px;
     opacity: 50%;
     align-items: center;
 }
 
-.IndexFooter ul li:hover{
+.IndexFooter ul li a:hover{
     opacity: 100%;
 }
 
@@ -266,6 +266,10 @@ body{
     color: white;
     text-decoration: none;
     font-size: 24px;
+    display: flex;
+    padding: 20px;
+    opacity: 50%;
+    align-items: center;
 }
 
 .IndexFooter ul li img{
@@ -273,7 +277,7 @@ body{
     margin-right: 10px;
 }
 
-.IndexFooter ul li:hover img{
+.IndexFooter ul li a:hover img{
 animation: vibracion 0.5s linear infinite;
 }
 
@@ -545,7 +549,7 @@ animation: vibracion 0.5s linear infinite;
 }
 
 .IndexFrase p{
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .IndexFrase h2{
