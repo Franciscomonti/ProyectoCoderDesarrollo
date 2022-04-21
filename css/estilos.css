@@ -34,6 +34,7 @@ body{
     grid-row: 1/4;
     grid-column: 1/4;
 }
+
 .video video{
     height: 80vh;
     width: 100%;
@@ -110,7 +111,7 @@ body{
 .IndexFrase{
     grid-area: 'frase';
     color: white;
-    width: 60%;
+    width: 70%;
     margin:100px auto 100px;
     text-align: center;
     border-top: 1px white solid;
@@ -119,11 +120,11 @@ body{
 }
 
 .IndexFrase p{
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .IndexFrase h2{
-    font-size: 50px;
+    font-size: 35px;
 }
 
 /* Index Main--Galleria de fotos con links */
@@ -205,7 +206,6 @@ body{
 }
 
 
-
 .VideoSection{
     grid-area: 'Videosection';
     display: flex;
@@ -228,6 +228,13 @@ body{
     margin: auto 20px;
 }
 
+.VideoSection .VideoParrafo h2{
+    font-size: 35px;
+}
+
+.VideoSection .VideoParrafo p{
+    font-size: 20px;
+}
 
 /* Footer */
 
@@ -527,7 +534,7 @@ animation: vibracion 0.5s linear infinite;
 }
 
 .NavBarIndex ul{
-    padding: 20px 10%;
+    padding: 10px 10%;
 }
 
 .NavBarIndex ul a{
@@ -625,15 +632,21 @@ animation: vibracion 0.5s linear infinite;
 }
 
 .VideoParrafo h2{
-    font-size: 24px;
     text-align: center;
 
 }
 
 .VideoParrafo p{
-    font-size: 14px;
     text-align: center;
 
+}
+
+.VideoSection .VideoParrafo h2{
+    font-size: 25px;
+}
+
+.VideoSection .VideoParrafo p{
+    font-size: 14px;
 }
 
 
