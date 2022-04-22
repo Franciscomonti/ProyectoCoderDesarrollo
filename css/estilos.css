@@ -966,5 +966,9 @@ animation: vibracion 0.5s linear infinite;
     margin: auto 0px;
     width: 10%;
 }
+
+.blackdiv{
+    height: 100px;
+}
 }
 
