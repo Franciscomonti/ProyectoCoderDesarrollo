@@ -23,7 +23,7 @@ body{
 /* carrusel bootstrap index */
 .carousel{
     width: 70%;
-    margin: 50px auto 100px;
+    margin: 100px auto 100px;
 }
 .carousel img{
     height: 400px;
@@ -34,6 +34,7 @@ body{
     margin: auto 0px;
     width: 5%;
 }
+
 
 
 /* ---Header--Index--- */
@@ -64,9 +65,9 @@ body{
     z-index: 100;
     padding: 20px 5px;
     align-self: flex-end;
-    background-color: black;
     opacity: 75%;
 }
+
 .LogoIndex img{
     width: 90px;
     animation: rotationy 7s infinite linear;
@@ -98,12 +99,13 @@ body{
     z-index: 100;
     opacity: 75%;
     align-self: flex-start;
+    background-color: black;
 }
 
 .NavBarIndex ul{
     display: flex;
     justify-content: end;
-    padding: 20px 30px;
+    padding: 10px 30px;
     /* background-color: black; */
     list-style: none;
 }
@@ -330,6 +332,8 @@ animation: vibracion 0.5s linear infinite;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: black;
+    opacity: 75%;
 }
 
 .NavBarSec ul{
