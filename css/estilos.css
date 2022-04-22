@@ -619,6 +619,43 @@ animation: vibracion 0.5s linear infinite;
     font-size: 24px;
 }
 
+/* ---Nav-Nar Secundaria--- */
+
+.NavBarSec{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.NavBarSec ul{
+    display: flex;
+    justify-content: center;
+    padding: 0px 0px;
+    margin: auto;
+}
+
+.NavBarSec ul a{
+    font-size: 18px;
+    padding: 40px;
+}
+
+.NavBarSec img{
+    width: 50px;
+}
+
+.NavBarSec div{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    margin: 5px 10px;
+}
+
+.NavBarSec div p{
+    color: white;
+    font-size: 20px;
+}
+
 /* Index Main--Galleria de fotos con links */
 
 .IndexMain{
