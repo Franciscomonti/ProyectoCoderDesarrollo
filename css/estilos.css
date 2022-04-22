@@ -19,6 +19,23 @@ body{
                         'footer';
     width: 100%;
 }
+/* bootstrap */
+/* carrusel bootstrap index */
+.carousel{
+    width: 70%;
+    margin: 50px auto 100px;
+}
+.carousel img{
+    height: 400px;
+    object-fit: cover;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    margin: auto 0px;
+    width: 5%;
+}
+
+/* bootstrap barra de navegacion */
 
 
 /* ---Header--Index--- */
@@ -39,17 +56,18 @@ body{
     height: 80vh;
     width: 100%;
     object-fit: cover;
-    filter: grayscale(1);
 }
 
 .LogoIndex{
     display: flex;
     grid-row: 3/4;
-    grid-column: 1/2;
+    grid-column: 1/4;
     align-items: center;
     z-index: 100;
-    margin: 20px 40px;
+    padding: 20px 5px;
     align-self: flex-end;
+    background-color: black;
+    opacity: 75%;
 }
 .LogoIndex img{
     width: 90px;
@@ -86,23 +104,21 @@ body{
 
 .NavBarIndex ul{
     display: flex;
-    justify-content: space-around;
-    padding: 20px 30%;
-    background-color: black;
+    justify-content: end;
+    padding: 20px 30px;
+    /* background-color: black; */
     list-style: none;
 }
 
 .NavBarIndex ul a{
     text-decoration: none;
     color: white;
-    font-size: 20px;
-    opacity: 50%;
+    font-size: 25px;
+    opacity: 75%;
+    padding: 5px 50px;
 }
 
 .NavBarIndex ul a:hover{
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
     opacity: 100%;
 }
 
@@ -188,7 +204,6 @@ body{
     color: whitesmoke;
     font-size: 30px;
     box-shadow: black 0 0 10px;
-    filter: grayscale(1);
     transition: 0.8s;
 }
 
@@ -258,12 +273,6 @@ body{
     justify-content: space-between;
 }
 
-.IndexFooter ul li a{
-    display: flex;
-    padding: 20px;
-    opacity: 50%;
-    align-items: center;
-}
 
 .IndexFooter ul li a:hover{
     opacity: 100%;
