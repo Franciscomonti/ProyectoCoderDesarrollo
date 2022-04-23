@@ -35,8 +35,6 @@ body{
     width: 5%;
 }
 
-
-
 /* ---Header--Index--- */
 .IndexHeader{
     grid-area: 'header';
@@ -523,9 +521,23 @@ animation: vibracion 0.5s linear infinite;
     grid-row: 4/5;
     background-image: url(../img/c10.jpg);
 }
+/* Pagina About */
+
+.MainAbout{
+    width: 70%;
+    margin: 50px auto;
+    color: white;
+}
+
+.CardAbout, .CardAboutR{
+    margin: 100px 0px;
+}
+
+.CardAboutR{
+    text-align: right;
+}
 
 /* pagina contacto */
-
 
 /* main contacto formularios */
 
@@ -969,6 +981,20 @@ animation: vibracion 0.5s linear infinite;
 
 .blackdiv{
     height: 100px;
+}
+
+.CardAboutR{
+    flex-direction: column-reverse;
+}
+
+.MainAbout{
+    width: 95%;
+    margin: 25px auto;
+}
+
+.CardAbout, .CardAboutR{
+    margin: 30px 0px;
+    text-align: center;
 }
 }
 
