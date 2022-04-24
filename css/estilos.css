@@ -289,7 +289,9 @@ animation: vibracion 0.5s linear infinite;
     justify-content: center;
     align-items: center;
 }
-
+.IndexFooter div p{
+    margin: auto 0px;
+}
 .IndexFooter .Logo img{
     width: 100px;
 }
@@ -798,16 +800,16 @@ animation: vibracion 0.5s linear infinite;
 /* Footer */
 
 .IndexFooter{
-    flex-direction: column;
+    flex-direction: column-reverse;
     padding: 10px 10px;
 }
 
 
 .IndexFooter ul{
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0px;
     margin: 0px 0px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .IndexFooter ul li{
@@ -817,6 +819,7 @@ animation: vibracion 0.5s linear infinite;
 
 .IndexFooter ul li a{
     font-size: 16px;
+    padding: 10px;
 }
 
 .IndexFooter ul li img{
@@ -828,7 +831,10 @@ animation: vibracion 0.5s linear infinite;
     padding: 0px 0px;
     margin:  0px;
     font-size: 14px;
+    display:flex;
+    
 }
+
 
 .IndexFooter .Logo img{
     width: 50px;
