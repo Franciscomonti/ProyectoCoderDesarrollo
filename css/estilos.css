@@ -89,36 +89,6 @@ body{
     white-space: nowrap;
 }
 
-/* --NavBar---Index--- */
-
-.NavBarIndex{
-    grid-column: 1/4;
-    grid-row: 1/2;
-    z-index: 100;
-    opacity: 75%;
-    align-self: flex-start;
-    background-color: black;
-}
-
-.NavBarIndex ul{
-    display: flex;
-    justify-content: end;
-    padding: 10px 30px;
-    /* background-color: black; */
-    list-style: none;
-}
-
-.NavBarIndex ul a{
-    text-decoration: none;
-    color: white;
-    font-size: 25px;
-    opacity: 75%;
-    padding: 5px 50px;
-}
-
-.NavBarIndex ul a:hover{
-    opacity: 100%;
-}
 
 /* Index Frase */
 
@@ -660,23 +630,27 @@ animation: vibracion 0.5s linear infinite;
 /* --NavBar---Index--- */
 
 .NavBarIndex{
-    grid-column: 1/4;
-    grid-row: 1/2;
-    z-index: 100;
-    opacity: 75%;
-    align-self: flex-start;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
 }
 
 .NavBarIndex ul{
-    padding: 10px 10%;
+    display: flex;
+    justify-content: end;
+    padding: 10px 10px;
 }
 
 .NavBarIndex ul a{
+    text-decoration: none;
+    color: white;
     font-size: 18px;
+    opacity: 75%;
+    padding: 5px 15px;
 }
 
 .NavBarIndex ul a:hover{
-    font-size: 18px;
+    opacity: 100%;
 }
 
 /* Index Frase */
