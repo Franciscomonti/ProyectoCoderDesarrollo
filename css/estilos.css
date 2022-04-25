@@ -534,7 +534,7 @@ animation: vibracion 0.5s linear infinite;
 .Formulario{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(5,1fr);
+    grid-template-rows: repeat(5, 1fr);
     width: 50%;
     margin: 0px auto 80px;
     height: 700px;
@@ -629,32 +629,6 @@ animation: vibracion 0.5s linear infinite;
     color: white;
 }
 
-/* --NavBar---Index--- */
-
-.NavBarIndex{
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-}
-
-.NavBarIndex ul{
-    display: flex;
-    justify-content: end;
-    padding: 10px 10px;
-}
-
-.NavBarIndex ul a{
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    opacity: 75%;
-    padding: 5px 15px;
-}
-
-.NavBarIndex ul a:hover{
-    opacity: 100%;
-}
-
 /* Index Frase */
 
 .IndexFrase{
@@ -678,20 +652,19 @@ animation: vibracion 0.5s linear infinite;
 .NavBarSec{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: flex-start;
 }
 
 .NavBarSec ul{
     display: flex;
     justify-content: center;
-    padding: 0px 0px;
+    padding: 0px 0px 10px;
     margin: auto;
 }
 
 .NavBarSec ul a{
     font-size: 18px;
-    padding: 40px;
+    padding: 30px;
 }
 
 .NavBarSec img{
@@ -807,9 +780,10 @@ animation: vibracion 0.5s linear infinite;
 
 .IndexFooter ul{
     justify-content: space-around;
-    padding: 0px;
-    margin: 0px 0px;
+    padding: 0px ;
+    margin: 0px 0px ;
     flex-wrap: nowrap;
+    flex-direction: column;
 }
 
 .IndexFooter ul li{
@@ -819,7 +793,7 @@ animation: vibracion 0.5s linear infinite;
 
 .IndexFooter ul li a{
     font-size: 16px;
-    padding: 10px;
+    padding: 0px;
 }
 
 .IndexFooter ul li img{
@@ -902,6 +876,12 @@ animation: vibracion 0.5s linear infinite;
     grid-row: 3/4;
 }
 
+/* Pagina About */
+
+.CardAbout div, .CardAboutR div{
+
+    margin-top: 20px;
+}
 
 /* Form contactos */
 .Contacto .leyend{
