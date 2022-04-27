@@ -19,6 +19,8 @@ body{
                         'footer';
     width: 100%;
 }
+
+
 /* bootstrap */
 /* carrusel bootstrap index */
 .carousel{
@@ -35,7 +37,60 @@ body{
     width: 5%;
 }
 
+/* ---Nav-Nar Secundaria--- */
+
+.NavBarSec{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00000090;
+}
+
+.NavBarSec ul{
+    display: flex;
+    justify-content: end;
+    padding: 10px 30px;
+    list-style: none;
+}
+
+.NavBarSec ul a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    opacity: 100%;
+    padding: 5px 50px;
+    height: auto;
+}
+
+.NavBarSec ul li{
+    border-left: 1px white solid;
+    margin-top: 20px;
+}
+
+.NavBarSec img{
+    width: 90px;
+    animation: rotationy 7s infinite linear;
+}
+
+.NavBarSec ul li:hover{
+    background-color: #80808080;
+}
+
+.NavBarSec div{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    padding-left: 40px;
+}
+
+.NavBarSec div p{
+    color: white;
+    margin: auto;
+    font-size: 40px;
+}
+
 /* ---Header--Index--- */
+
 .IndexHeader{
     grid-area: 'header';
     display: grid;
@@ -47,6 +102,7 @@ body{
 .video{
     grid-row: 1/4;
     grid-column: 1/4;
+    margin-top: 100px;
 }
 
 .video video{
@@ -296,52 +352,7 @@ animation: vibracion 0.5s linear infinite;
     width: 100px;
 }
 
-/* ---Nav-Nar Secundaria--- */
 
-.NavBarSec{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: black;
-    opacity: 75%;
-}
-
-.NavBarSec ul{
-    display: flex;
-    justify-content: end;
-    padding: 20px 30px;
-    list-style: none;
-}
-
-.NavBarSec ul a{
-    text-decoration: none;
-    color: white;
-    font-size: 25px;
-    opacity: 75%;
-    padding: 5px 50px;
-}
-
-.NavBarSec img{
-    width: 90px;
-    animation: rotationy 7s infinite linear;
-}
-
-.NavBarSec ul a:hover{
-    opacity: 100%;
-}
-
-.NavBarSec div{
-    display: flex;
-    justify-items: center;
-    justify-content: center;
-    margin: 0px 40px;
-}
-
-.NavBarSec div p{
-    color: white;
-    margin: auto;
-    font-size: 40px;
-}
 
 
 /* ---Gallery---Galleria de Imagenes--- */
@@ -612,6 +623,9 @@ animation: vibracion 0.5s linear infinite;
 
     
     /* ---Header--Index--- */
+.video{
+    margin-top: 110px;
+}
 
 .video video{
     height: 40vh;
@@ -655,6 +669,7 @@ animation: vibracion 0.5s linear infinite;
     align-items: flex-start;
 }
 
+
 .NavBarSec ul{
     display: flex;
     justify-content: center;
@@ -675,7 +690,8 @@ animation: vibracion 0.5s linear infinite;
     display: flex;
     justify-items: center;
     justify-content: center;
-    margin: 5px 10px;
+    margin: 0px 10px;
+    padding: 0px 0px;
 }
 
 .NavBarSec div p{
