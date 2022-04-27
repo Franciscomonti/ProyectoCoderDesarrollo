@@ -20,75 +20,6 @@ body{
     width: 100%;
 }
 
-
-/* bootstrap */
-/* carrusel bootstrap index */
-.carousel{
-    width: 70%;
-    margin: 100px auto 100px;
-}
-.carousel img{
-    height: 400px;
-    object-fit: cover;
-}
-
-.carousel-control-prev, .carousel-control-next {
-    margin: auto 0px;
-    width: 5%;
-}
-
-/* ---Nav-Nar Secundaria--- */
-
-.NavBarSec{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #00000090;
-}
-
-.NavBarSec ul{
-    display: flex;
-    justify-content: end;
-    padding: 10px 30px;
-    list-style: none;
-}
-
-.NavBarSec ul a{
-    text-decoration: none;
-    color: white;
-    font-size: 25px;
-    opacity: 100%;
-    padding: 5px 50px;
-    height: auto;
-}
-
-.NavBarSec ul li{
-    border-left: 1px white solid;
-    margin-top: 20px;
-}
-
-.NavBarSec img{
-    width: 90px;
-    animation: rotationy 7s infinite linear;
-}
-
-.NavBarSec ul li:hover{
-    background-color: #80808080;
-}
-
-.NavBarSec div{
-    display: flex;
-    justify-items: center;
-    justify-content: center;
-    padding-left: 40px;
-}
-
-.NavBarSec div p{
-    color: white;
-    margin: auto;
-    font-size: 40px;
-}
-
 /* ---Header--Index--- */
 
 .IndexHeader{
@@ -106,45 +37,76 @@ body{
 }
 
 .video video{
-    height: 80vh;
+    height: 90vh;
     width: 100%;
     object-fit: cover;
 }
 
-.LogoIndex{
-    display: flex;
-    grid-row: 3/4;
-    grid-column: 1/4;
-    align-items: center;
-    z-index: 100;
-    padding: 20px 5px;
-    align-self: flex-end;
-    opacity: 75%;
-}
-
-.LogoIndex img{
-    width: 90px;
-    animation: rotationy 7s infinite linear;
-}
-
+/* Efecto logo rotatorio */
 @keyframes rotationy {
     from {
     transform: rotatey(0deg);
     }
     50% {
-    transform: rotatey(0deg);    
+    transform: rotatey(0deg);
     }
     to {
     transform: rotatey(359deg);
     }
 }
 
-.LogoIndex p{
-    font-size: 40px;
-    color: white;
-    white-space: nowrap;
+/* ---Nav-Bar--- */
+
+.NavBarSec{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00000090;
 }
 
+.NavBarSec ul{
+    display: flex;
+    padding: 0px 30px;
+    list-style: none;
+}
+
+.NavBarSec ul a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    padding: 5px 40px;
+}
+
+.NavBarSec ul li{
+    border-left: 1px white solid;
+    margin-top: 20px;
+}
+
+.NavBarSec ul li:last-child{
+    border-right: 1px white solid;
+}
+
+.NavBarSec ul li:hover{
+    background-color: #80808080;
+}
+
+.NavBarSec div{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    padding-left: 40px;
+}
+
+.NavBarSec img{
+    width: 90px;
+    animation: rotationy 7s infinite linear;
+}
+
+.NavBarSec div p{
+    color: white;
+    margin: auto;
+    font-size: 40px;
+}
 
 /* Index Frase */
 
@@ -167,17 +129,35 @@ body{
     font-size: 35px;
 }
 
+/* bootstrap */
+
+/* carrusel bootstrap index */
+.carousel{
+    width: 70%;
+    margin: 100px auto;
+}
+.carousel img{
+    height: 400px;
+    object-fit: cover;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    margin: auto 0px;
+    width: 5%;
+}
+
+
 /* Index Main--Galleria de fotos con links */
 .IndexMain{
     grid-area: 'main';
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    height: 80vh; 
+    height: 80vh;
     width: 70%;
     grid-gap: 30px 20px;
     margin: 50px auto;
-    
+
 }
 
 .LinkGallery{
@@ -215,7 +195,6 @@ body{
     grid-column: 3/5;
     grid-row: 1/3;
     background-image: url(../img/5.jpg);
-    
 }
 
 .IndexMain a{
@@ -226,13 +205,12 @@ body{
     background-size: cover;
     text-decoration: none;
     color: whitesmoke;
-    font-size: 30px;
-    box-shadow: black 0 0 10px;
+    font-size: 40px;
     transition: 0.8s;
 }
 
 .IndexMain a:hover{
-    font-size: 50px;
+    font-size: 60px;
     filter: none;
     transform: scale(1.1);
     z-index: 1000;
@@ -244,13 +222,13 @@ body{
     grid-area: 'frase2';
 }
 
+/* video antes del footer */
 
 .VideoSection{
     grid-area: 'Videosection';
     display: flex;
     width: 70%;
     margin: 50px auto 150px;
-    height: auto;
     filter: grayscale(1);
     transition: 0.8s;
 }
@@ -275,14 +253,12 @@ body{
     font-size: 20px;
 }
 
-/* Footer */
+/* Footer De Todas Las Paginas */
 
 .IndexFooter{
     grid-area: 'footer';
     display: flex;
     width: 100%;
-    padding: 10px 80px;
-    height: auto;
     border-top: 1px white solid;
     align-items: center;
     justify-content: space-around;
@@ -291,19 +267,14 @@ body{
 
 .IndexFooter ul{
     display: flex;
-    justify-content: start;
     margin: 30px 0px;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 .IndexFooter ul li{
     list-style: none;
 }
 
-.IndexFooter ul li a:hover{
-    opacity: 100%;
-}
 
 .IndexFooter ul li a{
     color: white;
@@ -313,6 +284,10 @@ body{
     padding: 20px;
     opacity: 50%;
     align-items: center;
+}
+
+.IndexFooter ul li a:hover{
+    opacity: 100%;
 }
 
 .IndexFooter ul li img{
@@ -329,7 +304,7 @@ animation: vibracion 0.5s linear infinite;
     transform: rotate(-10deg);
     }
     50% {
-    transform: rotate(10deg);    
+    transform: rotate(10deg);
     }
     to {
     transform: rotate(-10deg);
@@ -352,10 +327,7 @@ animation: vibracion 0.5s linear infinite;
     width: 100px;
 }
 
-
-
-
-/* ---Gallery---Galleria de Imagenes--- */
+/* ---Gallery---Galleria de Imagenes---Pagina */
 
 .GalleryImgPage{
     display:grid;
@@ -386,19 +358,19 @@ animation: vibracion 0.5s linear infinite;
 .GalleryImgPage .img1{
     grid-column: 1/2;
     grid-row: 1/2;
-    background-image: url(../img/b1.jpg);  
+    background-image: url(../img/b1.jpg);
 }
 
 .GalleryImgPage .img2{
     grid-column: 2/3;
     grid-row: 1/3;
-    background-image: url(../img/b2.jpg);   
+    background-image: url(../img/b2.jpg);
 }
 
 .GalleryImgPage .img3{
     grid-column: 1/2;
     grid-row: 2/4;
-    background-image: url(../img/b3.jpg);   
+    background-image: url(../img/b3.jpg);
 }
 
 .GalleryImgPage .img4{
@@ -448,19 +420,19 @@ animation: vibracion 0.5s linear infinite;
 .GalleryImgPage .imgc1{
     grid-column: 1/2;
     grid-row: 1/3;
-    background-image: url(../img/c1.jpg);  
+    background-image: url(../img/c1.jpg);
 }
 
 .GalleryImgPage .imgc2{
     grid-column: 2/3;
     grid-row: 1/2;
-    background-image: url(../img/c2.jpg);   
+    background-image: url(../img/c2.jpg);
 }
 
 .GalleryImgPage .imgc3{
     grid-column: 1/2;
     grid-row: 3/4;
-    background-image: url(../img/c3.jpg);   
+    background-image: url(../img/c3.jpg);
 }
 
 .GalleryImgPage .imgc4{
@@ -621,7 +593,7 @@ animation: vibracion 0.5s linear infinite;
 
 @media only screen and (max-width:600px){
 
-    
+
     /* ---Header--Index--- */
 .video{
     margin-top: 110px;
@@ -667,19 +639,29 @@ animation: vibracion 0.5s linear infinite;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    height: 110px;
 }
 
 
 .NavBarSec ul{
-    display: flex;
-    justify-content: center;
-    padding: 0px 0px 10px;
+    padding: 0px 0px 5px;
     margin: auto;
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.NavBarSec ul li:first-child{
+    border-left: none;
+}
+
+.NavBarSec ul li:last-child{
+    border-right: none;
 }
 
 .NavBarSec ul a{
     font-size: 18px;
-    padding: 30px;
+    padding: 20px;
 }
 
 .NavBarSec img{
@@ -690,7 +672,7 @@ animation: vibracion 0.5s linear infinite;
     display: flex;
     justify-items: center;
     justify-content: center;
-    margin: 0px 10px;
+    margin: 5px 10px;
     padding: 0px 0px;
 }
 
@@ -704,11 +686,11 @@ animation: vibracion 0.5s linear infinite;
 .IndexMain{
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    height: 90vh; 
+    height: 90vh;
     width: 80%;
     grid-gap: 15px 10px;
     margin: 25px auto;
-    
+
 }
 
 .LinkGallery{
@@ -790,7 +772,7 @@ animation: vibracion 0.5s linear infinite;
 
 .IndexFooter{
     flex-direction: column-reverse;
-    padding: 10px 10px;
+    padding: 10px 0px;
 }
 
 
@@ -798,13 +780,14 @@ animation: vibracion 0.5s linear infinite;
     justify-content: space-around;
     padding: 0px ;
     margin: 0px 0px ;
-    flex-wrap: nowrap;
-    flex-direction: column;
+    flex-wrap: wrap;
+
 }
 
 .IndexFooter ul li{
     display: flex;
     padding: 7px;
+
 }
 
 .IndexFooter ul li a{
@@ -822,7 +805,7 @@ animation: vibracion 0.5s linear infinite;
     margin:  0px;
     font-size: 14px;
     display:flex;
-    
+
 }
 
 
@@ -844,17 +827,17 @@ animation: vibracion 0.5s linear infinite;
 
 .GalleryImgPage .img1{
     grid-column: 1/3;
-    grid-row: 1/2;  
+    grid-row: 1/2;
 }
 
 .GalleryImgPage .img2{
     grid-column: 2/3;
-    grid-row: 2/3;  
+    grid-row: 2/3;
 }
 
 .GalleryImgPage .img3{
     grid-column: 1/2;
-    grid-row: 2/3;   
+    grid-row: 2/3;
 }
 
 .GalleryImgPage .img4{
