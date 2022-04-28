@@ -211,9 +211,7 @@ body{
 
 .IndexMain a:hover{
     font-size: 60px;
-    filter: none;
     transform: scale(1.1);
-    z-index: 1000;
 }
 
 /* Frase debajo del main */
@@ -268,7 +266,6 @@ body{
 .IndexFooter ul{
     display: flex;
     margin: 30px 0px;
-    flex-wrap: wrap;
 }
 
 .IndexFooter ul li{
@@ -282,12 +279,7 @@ body{
     font-size: 24px;
     display: flex;
     padding: 20px;
-    opacity: 50%;
     align-items: center;
-}
-
-.IndexFooter ul li a:hover{
-    opacity: 100%;
 }
 
 .IndexFooter ul li img{
@@ -310,6 +302,8 @@ animation: vibracion 0.5s linear infinite;
     transform: rotate(-10deg);
     }
 }
+
+/* Footer Logo mas Frase */
 
 .IndexFooter div{
     color: white;
@@ -350,7 +344,7 @@ animation: vibracion 0.5s linear infinite;
     font-size: 50px;
     filter: none;
     transform: scale(1.2);
-    z-index: 1000;
+    z-index: 100;
 }
 
 
@@ -415,7 +409,7 @@ animation: vibracion 0.5s linear infinite;
     background-image: url(../img/b10.jpg);
 }
 
-/* gallery iamgenes casamiento */
+/* Gallery Imagenes Casamiento */
 
 .GalleryImgPage .imgc1{
     grid-column: 1/2;
@@ -600,12 +594,12 @@ animation: vibracion 0.5s linear infinite;
 }
 
 .video video{
-    height: 40vh;
+    height: 30vh;
 }
 
 .LogoIndex{
     grid-column: 1/3;
-    margin: 10px 20px;
+    margin: 10px 20px 0px;
 }
 .LogoIndex img{
     width: 60px;
@@ -619,10 +613,10 @@ animation: vibracion 0.5s linear infinite;
 
 .IndexFrase{
     width: 90%;
-    margin:20px auto 20px;
+    margin:10px auto 10px;
     border-top: none;
     border-bottom: none;
-    padding: 20px 10px;
+    padding: 10px 10px;
 }
 
 .IndexFrase p{
@@ -644,7 +638,7 @@ animation: vibracion 0.5s linear infinite;
 
 
 .NavBarSec ul{
-    padding: 0px 0px 5px;
+    padding: 0px 0px 10px;
     margin: auto;
     display: flex;
     justify-content: space-around;
@@ -686,11 +680,10 @@ animation: vibracion 0.5s linear infinite;
 .IndexMain{
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    height: 90vh;
+    height: 60vh;
     width: 80%;
     grid-gap: 15px 10px;
-    margin: 25px auto;
-
+    margin: 10px auto;
 }
 
 .LinkGallery{
@@ -713,7 +706,6 @@ animation: vibracion 0.5s linear infinite;
     grid-row: 3/4;
 }
 
-
 .LinkAbout{
     grid-column: 2/3;
     grid-row: 3/4;
@@ -724,11 +716,6 @@ animation: vibracion 0.5s linear infinite;
     grid-row: 4/5;
 }
 
-.IndexMain a{
-    filter: none;
-}
-
-
 /* Video del Index */
 
 .VideoSection{
@@ -736,7 +723,7 @@ animation: vibracion 0.5s linear infinite;
     display: flex;
     flex-direction: column;
     width: 80%;
-    margin: 50px auto 20px;
+    margin: 10px auto 10px;
     height: auto;
     filter: none;
 }
@@ -746,7 +733,7 @@ animation: vibracion 0.5s linear infinite;
 }
 
 .VideoSection .VideoParrafo{
-    margin: 20px auto;
+    margin: 10px auto;
 }
 
 .VideoParrafo h2{
@@ -772,22 +759,19 @@ animation: vibracion 0.5s linear infinite;
 
 .IndexFooter{
     flex-direction: column-reverse;
-    padding: 10px 0px;
+    padding: 20px 0px;
 }
-
 
 .IndexFooter ul{
     justify-content: space-around;
     padding: 0px ;
     margin: 0px 0px ;
     flex-wrap: wrap;
-
 }
 
 .IndexFooter ul li{
     display: flex;
     padding: 7px;
-
 }
 
 .IndexFooter ul li a{
@@ -805,7 +789,6 @@ animation: vibracion 0.5s linear infinite;
     margin:  0px;
     font-size: 14px;
     display:flex;
-
 }
 
 
@@ -876,13 +859,31 @@ animation: vibracion 0.5s linear infinite;
 }
 
 /* Pagina About */
+.MainAbout{
+    width: 95%;
+    margin: 25px auto;
+}
 
 .CardAbout div, .CardAboutR div{
-
     margin-top: 20px;
 }
 
+.CardAboutR{
+    flex-direction: column-reverse;
+}
+
+.CardAbout, .CardAboutR{
+    margin: 30px 0px;
+    text-align: center;
+}
+
+.blackdiv{
+    height: 150px;
+}
+
+
 /* Form contactos */
+
 .Contacto .leyend{
     font-size: 18px ;
     padding:40px 0px;
@@ -924,13 +925,13 @@ animation: vibracion 0.5s linear infinite;
     font-size: 14px;
 }
 
-/* carrusel bootstrap index */
+/* carrusel bootstrap */
 .carousel{
     width: 90%;
-    margin: 50px auto 50px;
+    margin: 10px auto 30px;
 }
 .carousel img{
-    height: 200px;
+    height: 180px;
 }
 
 .carousel-control-prev, .carousel-control-next {
@@ -938,22 +939,5 @@ animation: vibracion 0.5s linear infinite;
     width: 10%;
 }
 
-.blackdiv{
-    height: 100px;
-}
-
-.CardAboutR{
-    flex-direction: column-reverse;
-}
-
-.MainAbout{
-    width: 95%;
-    margin: 25px auto;
-}
-
-.CardAbout, .CardAboutR{
-    margin: 30px 0px;
-    text-align: center;
-}
 }
 
